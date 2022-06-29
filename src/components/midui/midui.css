@@ -1,0 +1,126 @@
+.midui_container{
+    height: 100%;
+    width: 20%;
+    margin-left: 20%;
+    display: flex;
+ 
+    align-items: center;
+    flex-direction: column;
+}
+.first_midui_box{
+    width: 90%;
+    height: 150px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.first_midui_box p{
+    font-size: 10px;
+}
+.first_midui_box span, .first_midui_box p, .radio_button_container, .radio_button_container2{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.first_midui_box span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px
+}
+.first_midui_box p{
+    color: rgba(157, 157, 157, 0.85);
+}
+.midui_button{
+    height: 40px;
+    width: 90%;
+    margin-top: 20px;
+    background-color:#4CAF50;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+.radio_button_container, .radio_button_container2{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.radio_button_container2{
+    width: 70%;
+}
+.radio_overlay{
+    height: 30px;
+    width: 33%;
+    border-bottom: 1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio_overlay:nth-child(1){
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+}
+.slider_container{
+    position: relative;
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    margin-left: 10px;
+ 
+}
+.silder_value{ 
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.silder_value p{
+    font-family: 600;
+}
+.slider{
+    position: absolute;
+    height: 4px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+}
+.slider2{
+    position: relative;
+    height: 4px;
+    width: 60%;
+    background-color: #4CAF50;
+}
+.slider_left, .slider_right{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider_right{
+    left: 100%;
+}
+
+.slider_left img, .slider_right img{
+    height: 100%;
+    width: 100%;
+}
+.radio_button_container2 .radio_overlay:nth-child(3){
+    background-color: #D9D9D9;
+    color: rgba(0, 0, 0, 0.25);
+}
