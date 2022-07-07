@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Layout } from 'antd';
+import React from 'react';
+import 'antd/dist/antd.css';
+import Topbar from './components/topbar/Topbar';
+import Sidebar from './components/sidebar/Sidebar';
+import Maincontent from './components/mainContent/Maincontent';
+
+const { Header, Sider, Content } = Layout;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Layout>
+      <Sider width = "20%" style={{backgroundColor:"white", }}> <Sidebar/> </Sider>
+      <Layout>
+        <Header style={{backgroundColor:"white"}}> <Topbar/> </Header>
+        <Content> <Maincontent/> </Content>
+      </Layout>
+    </Layout>
     </div>
   );
 }
