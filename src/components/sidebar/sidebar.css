@@ -13,9 +13,9 @@
     width: 100%;
 }
 .menu_container{
-    width: 90%;
+    height: 500px;
+    width: 100%;
     margin-top: 40px;
-    margin-left: 10%;
 }
 
 .ant-menu-title-content{

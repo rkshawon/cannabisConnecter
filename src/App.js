@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
     <Layout>
-      <Sider width = "20%" style={{backgroundColor:"white", }}> <Sidebar/> </Sider>
+      <Sider width = "17%" style={{backgroundColor:"white", }}> <Sidebar/> </Sider>
       <Layout>
         <Header style={{backgroundColor:"white"}}> <Topbar/> </Header>
         <Content> <Maincontent/> </Content>

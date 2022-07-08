@@ -1,6 +1,7 @@
 import './sidebar.css'
 import logo from './logo.png'
-import {MdOutlineLocalShipping, MdOutlineSpaceDashboard} from 'react-icons/md'
+import Transport from './shipping.png'
+import { MdOutlineSpaceDashboard} from 'react-icons/md'
 import {ImLab} from 'react-icons/im'
 import {BiBox} from 'react-icons/bi'
 
@@ -22,7 +23,7 @@ const items = [
     getItem('Products 1', '1'),
     getItem('Products 2', '2'),
   ]),
-  getItem('Transports', 'sub3', <MdOutlineLocalShipping style={{fontSize: "24px", color:"black"}}/>, [
+  getItem('Transports', 'sub3', <img src={Transport} alt='' style={{height: "26px",width:'26px', color:"black"}}/>, [
     getItem('Proposals', '3'),
   ]),
   getItem('Labratories', 'sub4', <ImLab style={{fontSize: "24px", color:"black"}}/>),
@@ -32,6 +33,7 @@ function Sidebar() {
   const onClick = (e) => {
     console.log('click ', e);
   };
+
   return (
       <div className="sidebar_wrapper">
         <div className="logo_container">
