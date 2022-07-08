@@ -74,16 +74,12 @@
 }
 
 
-.ant-slider-rail:hover{
-    background-color: red;
-}
-
 .ant-slider-handle.ant-slider-handle-1:focus, .ant-slider-handle.ant-slider-handle-2:focus{
     border: #6ddd70 2px solid;
 }
-.ant-slider-handle.ant-slider-handle-1:hover, .ant-slider-handle.ant-slider-handle-2:hover{
+/* .ant-slider-handle.ant-slider-handle-1:hover, .ant-slider-handle.ant-slider-handle-2:hover{
     border: #6ddd70 2px solid;
-}
+} */
 .ant-slider-track {
     background-color: #4CAF50;
 }
@@ -96,5 +92,11 @@
 }
 .ant-slider-handle:hover{
     border: 2px solid #6ddd70;
+}
+.ant-slider-handle.ant-slider-handle-1:hover + .ant-slider-handle.ant-slider-handle-2{
+    border: #6ddd70 2px solid;
+}
+.ant-slider:hover .ant-slider-handle.ant-slider-handle-1{
+    border: #6ddd70 2px solid;
 }
 
