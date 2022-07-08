@@ -5,30 +5,30 @@ import { Card, Radio, Slider, Button } from 'antd';
 
 const options = [
     {
-      label: 'Apple',
+      label: 'Active',
       value: 'Apple',
     },
     {
-      label: 'Pear',
+      label: 'Pending',
       value: 'Pear',
     },
     {
-      label: 'Orange',
+      label: 'Archive',
       value: 'Orange',
     },
   ];
 
   const optionsWithDisabled = [
     {
-      label: 'Apple',
+      label: 'Truck',
       value: 'Apple',
     },
     {
-      label: 'Pear',
+      label: 'Van',
       value: 'Pear',
     },
     {
-      label: 'Orange',
+      label: 'SUV',
       value: 'Orange',
       disabled: true,
     },
@@ -49,7 +49,7 @@ function Leftcontent() {
   return (
     <div className='left_content'>
         <div className='cards'>
-            <Card style={{width: "100%", minHeight: 158,}}>
+            <Card style={{width: "100%", minHeight: 158,}} className="card">
                 <div className="first_midui_box">
                     <span>Proposal Status</span>
                     <p>Select your proposal as their current status</p>
@@ -84,7 +84,7 @@ function Leftcontent() {
             <Card style={{width: "100%", minHeight: 152, marginTop: "20px"}}>
                 <div className="first_midui_box">
                     <span>Proposal Status</span>
-                    <p>Select your proposal as their current status</p>
+                    <p>Filter the vehicles category of current proposal</p>
                     <Radio.Group
                     options={optionsWithDisabled}
                     onChange={onChange4}

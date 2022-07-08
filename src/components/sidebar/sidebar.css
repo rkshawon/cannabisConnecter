@@ -34,3 +34,10 @@
 .ant-menu-inline .ant-menu-item::after{
     border-right: 0px ;
 }
+.ant-menu-sub.ant-menu-inline {
+    background: white;
+}
+
+.ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow{
+    color: #4CAF50;
+}

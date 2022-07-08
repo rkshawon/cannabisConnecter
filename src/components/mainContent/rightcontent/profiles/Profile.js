@@ -9,7 +9,7 @@ import { DownOutlined , UpOutlined} from '@ant-design/icons'
 import { useState } from 'react'
 
 
-function Profile({profile, name, address, model, rate, amount}) {
+function Profile({profile, name, address, model, modela, rate, amount}) {
     const [isOpen, setisOpen] = useState(false)
 
     const collaps = ()=>{
@@ -28,7 +28,7 @@ function Profile({profile, name, address, model, rate, amount}) {
       </div>
       <div className="top2">
         <span>{model}</span>
-        <span>2018, GA-LXM</span>
+        <span>{modela}</span>
       </div>
       <div className="top3">
         <small>Overall Rating</small>
