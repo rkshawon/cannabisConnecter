@@ -83,7 +83,7 @@ function Leftcontent() {
             </Card>
             <Card style={{width: "100%", minHeight: 152, marginTop: "20px"}}>
                 <div className="first_midui_box">
-                    <span>Proposal Status</span>
+                    <span>Vehicle Category</span>
                     <p>Filter the vehicles category of current proposal</p>
                     <Radio.Group
                     options={optionsWithDisabled}

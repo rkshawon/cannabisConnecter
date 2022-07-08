@@ -90,7 +90,11 @@ function Profile({profile, name, address, model, modela, rate, amount}) {
     </div>
     }
     <div className="collaps_button" onClick={collaps}>
-        { !isOpen? <DownOutlined className='collaps_icon' /> : <UpOutlined className='collaps_icon'/>}
+        { !isOpen? 
+          <DownOutlined style={{fontSize: '10px'}} className='collaps_icon' /> 
+          : 
+          <UpOutlined style={{fontSize: '10px'}} className='collaps_icon'/>
+        }
     </div>
 </div>
   )
