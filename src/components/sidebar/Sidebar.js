@@ -1,10 +1,9 @@
 import './sidebar.css'
 import logo from './logo.png'
 import Transport from './shipping.png'
+import Lab from './lab.png'
 import { MdOutlineSpaceDashboard} from 'react-icons/md'
-import {ImLab} from 'react-icons/im'
 import {BiBox} from 'react-icons/bi'
-
 import { Menu } from 'antd';
 
 function getItem(label, key, icon, children, type) {
@@ -26,7 +25,7 @@ const items = [
   getItem('Transports', 'sub3', <img src={Transport} alt='' style={{height: "26px",width:'26px', color:"black"}}/>, [
     getItem('Proposals', '3'),
   ]),
-  getItem('Labratories', 'sub4', <ImLab style={{fontSize: "24px", color:"black"}}/>),
+  getItem('Labratories', 'sub4', <img src={Lab} alt='' style={{height: "26px",width:'26px', color:"black"}}/> ),
 ];
 
 function Sidebar() {

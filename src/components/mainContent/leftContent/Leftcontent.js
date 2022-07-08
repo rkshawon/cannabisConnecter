@@ -52,7 +52,7 @@ function Leftcontent() {
             <Card style={{width: "100%", minHeight: 158,}} className="card">
                 <div className="first_midui_box">
                     <span>Proposal Status</span>
-                    <p>Select your proposal as their current status</p>
+                    <p>Select your proposals as their current status</p>
                     <Radio.Group
                      options={options} 
                      onChange={onChange3} 
