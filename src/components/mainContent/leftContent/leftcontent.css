@@ -93,10 +93,11 @@
 .ant-slider-handle:hover{
     border: 2px solid #6ddd70;
 }
-.ant-slider-handle.ant-slider-handle-1:hover + .ant-slider-handle.ant-slider-handle-2{
+
+.ant-slider:hover .ant-slider-handle.ant-slider-handle-1{
     border: #6ddd70 2px solid;
 }
-.ant-slider:hover .ant-slider-handle.ant-slider-handle-1{
+.ant-slider:hover .ant-slider-handle.ant-slider-handle-2{
     border: #6ddd70 2px solid;
 }
 
